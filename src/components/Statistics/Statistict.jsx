@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, ListStats, ItemListStats, Text } from './Statistict-styled';
+import { ListStats, ItemListStats, Text } from './Statistict-styled';
 
 export default function Statistics({
   good,

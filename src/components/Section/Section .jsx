@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import { Title, SectionEl } from './Section-styled';
 
 export default function Section({ text, children }) {
