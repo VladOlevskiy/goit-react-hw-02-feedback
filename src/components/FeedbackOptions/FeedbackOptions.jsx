@@ -1,5 +1,6 @@
 import React from 'react';
 import { ListButton, ListItemButton, Button } from './FeedbackOptions-styled';
+import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ foo, stateKeys }) {
   return (
@@ -14,3 +15,8 @@ export default function FeedbackOptions({ foo, stateKeys }) {
     </ListButton>
   );
 }
+
+FeedbackOptions.propTypes = {
+  foo: PropTypes.func.isRequired,
+  stateKeys: PropTypes.array.isRequired,
+};

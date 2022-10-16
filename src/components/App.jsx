@@ -43,7 +43,19 @@ export class App extends Component {
     const countPositiveFeedbackPercentage = `${this.countPositiveFeedbackPercentage()}%`;
 
     return (
-      <Box>
+      <Box
+        paddingBottom="30px"
+        display="flex"
+        flexDirection="column"
+        marginLeft="auto"
+        marginRight="auto"
+        alignItems="center"
+        width="500px"
+        boxShadow="0px 1px 7px rgb(0 0 0), 0px 1px 8px rgb(0 0 0 / 67%), 0px 2px 3px rgb(0 0 0 / 47%)"
+        borderRadius="0px 0px 4px 4px"
+        backgroundColor="#cbcbcb"
+        marginBottom="80px"
+      >
         <Section text="Please leave feedback">
           <FeedbackOptions
             foo={this.GetCountFeedback}
