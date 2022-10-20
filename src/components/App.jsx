@@ -16,7 +16,9 @@ export class App extends Component {
 
   /////////////////////////////_______________________
   GetCountFeedback = evt => {
-    this.setState({ [evt.target.name]: this.state[evt.target.name] + 1 });
+    this.setState(prevState => {
+      return { [evt.target.name]: prevState[evt.target.name] + 1 };
+    });
   };
   /////////////////////////////_______________________
   countTotalFeedback = () => {
